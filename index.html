@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="MULE, Adaptive control, Legged Robots, Reinforcement Learning, Quadruped Robot">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/stochlab.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <img src="./static/images/final_logo.png" width="20%" alt="Stoch Lab Logo"/>
+        <!-- <img src="./static/images/IISc_Logo.jpg" width="10%" alt="IISc Logo" align="right"/> -->
+        <img src="./static/images/iisc_logo.png" width="11%" alt="IISc Logo" align="right"/>
+        <div class="columns is-centered"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">        
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">MULE: Multi-terrain and Unknown Load Adaptation for Effective Quadrupedal Locomotion</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=tHjGrMoAAAAJ&hl=en">Vamshi Kumar Kurva</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.shishirny.com/">Shishir Kolathaya</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"> Indian Institute of Science (IISc), Bangalore </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              
+<!--              <span class="link-block">-->
+<!--                <a href="https://arxiv.org/abs/2409.09441"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="ai ai-arxiv"></i>-->
+<!--                  </span>-->
+<!--                  <span>arXiv</span>-->
+<!--                </a>-->
+<!--              </span>-->
+
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+
+              <!-- Code Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://www.github.com/StochLab/PIP-Loco"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                  </span>-->
+<!--                  <span>Code</span>-->
+<!--                </a>-->
+<!--              </span>-->
+            </div>
+          </div>
+
+          <!-- Under Review Text -->
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"> (Preprint under review) </span>
+          </div>
+          
+          <div class="column has-text-centered">
+            <div class="columns is-centered has-text-centered">
+              <div class="column">
+                <img src="images/results/leaves.gif" width="48%">
+                <img src="images/results/slopes3.gif" width="48%">
+            </div>      
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Quadrupedal robots are increasingly deployed for
+load-carrying tasks across diverse terrains. While Model Pre-
+dictive Control (MPC)-based methods can account for payload
+variations, they often depend on predefined gait schedules or
+trajectory generators, limiting their adaptability in unstruc-
+tured environments. To address these limitations, we propose
+an Adaptive Reinforcement Learning (RL) framework that
+enables quadrupedal robots to dynamically adapt to both
+varying payloads and diverse terrains. The framework consists
+of a nominal policy responsible for baseline locomotion and an
+adaptive policy that learns corrective actions to preserve stability
+and improve command tracking under payload variations. We
+validate the proposed approach through large-scale simulation
+experiments in Isaac Gym and real-world hardware deployment
+on a Unitree Go1 quadruped. The controller was tested on
+flat ground, slopes, and stairs under both static and dynamic
+payload changes. Across all settings, our adaptive controller
+consistently outperformed the controller in tracking body height
+and velocity commands, demonstrating enhanced robustness
+and adaptability without requiring explicit gait design or
+manual tuning.
+            </p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</section>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">    
+      <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3"> Background </h2>
+          </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+        <div class="content has-text-justified" style="padding-top: 3%">
+          <p>
+            Traditional load adaptation methods for quadrupeds are model-based force controllers that regulate GRFs at the stance feet based on desired height and payload variations. They typically model quadrupeds as an SRB and compute optimal GRFs at contact points, relying on gait or trajectory generators to predefine foot contact schedules based on gait and velocity. A switch-based controller applies force control to stance legs and PD control to swing legs, making the system sensitive to early or delayed contacts on unstructured terrains, which can cause instability. In contrast, RL-based controllers directly output desired joint positions tracked by a PD controller, eliminating phase-based switching and enabling implicit adaptation to terrain and contact variations. Domain randomization is commonly used in RL-based methods to improve robustness to disturbances by introducing parameter variations during training; however, an excessive range of randomization often leads to conservative policies that prioritize robustness over optimal performance. This highlights the need for adaptive policies that dynamically adjust to payload changes and terrain variations.
+          </p>
+        </div>
+        <!-- <img src="images/Comparison.png" width="100%"> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">    
+      <div class="columns is-centered has-text-centered">
+        <div class="column" style="padding-bottom: 3%">
+          <h2 class="title is-3"> Training Architecture </h2>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        <img src="images/Adapt_RL_latest_new.png" alt="PIP-Loco Training Architecture" width="80%">
+        <div class="content has-text-justified" style="padding-top: 5%">
+          <p>
+            We introduce an Adaptive RL framework for locomotion under varying payload conditions by augmenting the nominal policy with an adaptive corrective policy. 
+            The framework is trained in a two-phase process: the
+            nominal policy is first trained under normal conditions,
+            followed by an adaptive policy that provides corrective
+            actions without the need for explicit payload parameter
+            estimation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">    
+      <div class="columns is-centered has-text-centered">
+        <div class="column" style="padding-bottom: 3%">
+          <h2 class="title is-3"> Comparison with the baseline </h2>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="content has-text-justified" style="padding-top: 3%">
+          <p>
+            We compared the tracking performance against DreamWaQ, an RL-based controller, with the base mass randomized in the range [0, 10] kg, which we refer to as the Baseline controller. 
+            Since our proposed method is also RL-based, this allows for a fair comparison of adaptive performance under mass variations.
+          </p>
+      </div>
+    </div>
+    <div class="column has-text-centered">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+            <h3 class="title is-4"> Baseline </h3>
+            <img src="images/results/baseline_failure_2x-ezgif.gif" width="100%">
+        </div>
+        <div class="column">
+            <h3 class="title is-4"> Adaptive (ours) </h3>
+            <img src="images/results/adaptive_success_2x-ezgif.gif" width="100%">
+        </div>
+      </div>
+      <div class="content has-text-justified" style="padding-top: 3%">
+        <p>
+          The GIFs show the baseline versus the adaptive controller under a progressive increase of payload up to 10 kg. 
+          The baseline controller struggles to maintain stable locomotion, exhibiting noticeable foot scuffing and instability at higher payloads. 
+          In contrast, the adaptive controller successfully compensates for the added weight, maintaining balance and coordination throughout.
+        </p>
+    </div>
+    </div>    
+  </div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">    
+      <div class="columns is-centered has-text-centered">
+          <div class="column" style="padding-bottom: 3%">
+            <h2 class="title is-3"> Results </h2>
+          </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              The proposed Adaptive RL framework was successfully deployed on a Unitree Go1 robot and evaluated across diverse terrains, 
+              including flat ground, slopes, and stairs, under both varying static payloads and dynamic payload scenarios, such as freely 
+              moving iron balls placed in a traymounted on the robot’s base. Across all tested conditions, our policy consistently outperformed 
+              the baseline controller in terms of accurately tracking both the commanded body height and velocity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column">
+          <video width="100%" style="padding: 2%;" autoplay loop muted playsinline>
+            <source src="images/videos/Almost_flat_cut_2x.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column">
+          <video width="100%" style="padding: 2%;" autoplay loop muted playsinline>
+            <source src="images/videos/slope_down_cut_2x.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+      <div class="columns is-centered">
+        <div class="column">
+          <video width="100%" style="padding: 2%;" autoplay loop muted playsinline>
+            <source src="images/videos/slope_up1_cut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column">
+          <video width="100%" style="padding: 2%;" autoplay loop muted playsinline>
+            <source src="images/videos/slope_up3_cut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+      <div class="columns is-centered">
+        <div class="column">
+          <video width="100%" style="padding: 2%;" autoplay loop muted playsinline>
+            <source src="images/videos/stairs_up_cut.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column">
+          <video width="100%" style="padding: 2%;" autoplay loop muted playsinline>
+            <source src="images/videos/stairs_down_cut_2x.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+
+        <div class="column">
+          <video width="100%" style="padding: 2%;" autoplay loop muted playsinline>
+            <source src="images/videos/grass_cut_2x.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column">
+          <video width="100%" style="padding: 2%;" autoplay loop muted playsinline>
+            <source src="images/videos/leaves2_cut_2x.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/StochLab" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
